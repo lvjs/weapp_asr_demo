@@ -1,0 +1,17 @@
+<view class="container">
+  <view>
+    <text>{{wxRecorder.text}}</text>
+  </view>
+  <view wx:if="{{wxRecorder.voiceFilePath}}">
+    <view style="word-break: break-word;">录音文件地址：{{wxRecorder.voiceFilePath}}</view>
+    <button size="small" hover-class="button-hover" class="button-voice" bindtap="playVoice">播放</button>
+    <text>暂停功能没开发，点击播放前确认音量：）</text>
+  </view>
+  <view class="voice">
+    <button type="primary" size="default" hover-class="button-hover" class="button-voice" bindtap="tapWxRecorder">{{wxRecorder.btnName}}</button>
+  </view>
+  <view style="height: 0; border-top: 6rpx solid #00f; width: 100%;margin: 20px 0;"></view>
+  <view class="voice">
+    <button type="primary" size="default" hover-class="button-hover" class="button-voice" bindtap="toggleVoicePlugin">切换方案</button>
+  </view>
+</view>

@@ -1,0 +1,12 @@
+.voice{
+  padding-top: 50rpx;
+}
+
+.button-voice-play,
+.button-bpPage{
+  margin-top: 20rpx;
+}
+
+.button-hover{
+  background-color: 999;
+}
